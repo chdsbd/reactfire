@@ -124,7 +124,6 @@ export function useObservable<T = unknown>(observableId: string, source: Observa
       },
       error: (e) => {
         dispatch('error');
-        throw e;
       },
       complete: () => {
         dispatch('complete');
